@@ -1,9 +1,9 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
-// Hàm tính giá trị ax^2 + bx + c
+// Hàm tính giá trị ax^2 + bx + 2cax + bx + c
 int get_value(int x, int a = 2, int b = 1, int c = 0) {
-    return a * x * x + b * x + c;
+    return a * x * x + b * x + 2 * c * a * x + b * x + c;
 }
 
 int main() {
@@ -11,8 +11,11 @@ int main() {
     printf("Nhap vao mot so nguyen x (x < 100): ");
     scanf("%d", &x);
 
-    // Nhập 3 số nguyên a, b, c từ bàn phím
-    int a, b, c;
+    int a = 2; //# giá trị mặc định của a
+    int b = 1; //# giá trị mặc định của b
+    int c = 0; //# giá trị mặc định của c
+
+    //# Nhập 3 số nguyên a, b, c từ bàn phím
     printf("Nhap vao 3 so nguyen a, b, c: ");
     scanf("%d%d%d", &a, &b, &c);
 

@@ -20,7 +20,7 @@ int main() {
         cin >> B[i];
     }
 
-    int degree = N + M - 1;
+    int degree = N + M;
     vector<int> C(degree + 1, 0);
 
     for (int i = 0; i <= N; ++i) {

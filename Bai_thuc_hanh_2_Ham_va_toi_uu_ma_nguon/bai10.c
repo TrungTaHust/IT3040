@@ -38,8 +38,8 @@ Matrix multiply_naive(const Matrix& a, const Matrix& b) {
 Matrix multiply_fast(const Matrix& a, const Matrix& b) {
     Matrix c;
     for (int i = 0; i < N; ++i) {
-        for (int j = 0; j < N; ++j) {
-            for (int k = 0; k < N; ++k) {
+        for (int k = 0; k < N; ++k) {
+            for (int j = 0; j < N; ++j) {
                 c.mat[i][j] += a.mat[i][k] * b.mat[k][j];
             }
         }
